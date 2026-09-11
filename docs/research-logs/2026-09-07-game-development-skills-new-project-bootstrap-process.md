@@ -1,8 +1,9 @@
 # Game Development Skills - New Project Bootstrap Process
 
 **Status:** Bootstrap specification  
-**Version:** 1.0  
-**Date:** 7 September 2026
+**Version:** 1.1  
+**Created:** 7 September 2026  
+**Updated:** 12 September 2026
 
 ## 1. Purpose
 
@@ -10,7 +11,9 @@ This process defines how `game-development-skills` moves from a project idea to 
 
 The repository should encode reusable game-development production intelligence: how to turn a game premise into a playable, testable and progressively refined interactive system without making one game engine, one provider or one coding agent the workflow.
 
-The bootstrap is governed by `production-skills/docs/bootstrap` and the current Production Skills family specifications. Mature Video, Narrative and Music Production Skills repositories are reference implementations for proven family patterns, but this process must remain native to game development.
+The bootstrap is governed by `production-skills/docs/bootstrap` and the current Production Skills family specifications. In particular, it adopts the canonical **Seed → Five → Challenge** domain-research process and the evidence-led Extension Pack process while preserving the game-specific stage identifiers established by Version 1.0.
+
+Mature Video, Narrative and Music Production Skills repositories remain reference implementations for proven family patterns, but this process must remain native to game development.
 
 The target production shape is provisionally:
 
@@ -30,9 +33,41 @@ player / product intent
 → playable delivery
 ```
 
-The exact workflow, artefacts and core skills remain provisional until the staged research validates them.
+The exact workflow, artefacts and core skills remain provisional until the staged research qualifies them with evidence.
 
 The project is complete only when its installed skills can guide a clean consumer project through a realistic game-development workflow and produce a playable result with reproducible evaluation evidence.
+
+### 1.1 Migration rule
+
+This revision updates the research method without rewriting bootstrap history.
+
+The repository is still a minimal bootstrap workspace and no substantive Stage 1–23 execution logs exist beyond this bootstrap specification. Preserve the existing numbered stages and insert the new domain-research gates as **Stage 1A** and **Stage 1B** before Stage 2.
+
+```text
+Stage 1
+→ define the boundary
+
+Stage 1A
+→ bounded reconnaissance + select five complementary books
+
+Stage 1B
+→ directly examine, extract and reconcile those five books
+
+Stage 2
+→ challenge and extend the provisional model through broader professional research
+```
+
+For Extension Packs, preserve Stage 12 and Stage 20 while embedding the canonical pack stages:
+
+```text
+Stage 12
+→ catalogue curation + P1–P5 research / design
+
+Stage 20
+→ P6 implementation / demonstration + P7 comparative proof / installation / catalogue readiness
+```
+
+Generating or revising this bootstrap defines work to perform. It does **not** prove that corpus selection, book extraction, broader research, per-pack research, implementation or evaluation has already occurred.
 
 ---
 
@@ -41,31 +76,39 @@ The project is complete only when its installed skills can guide a clean consume
 The bootstrap must produce:
 
 1. a clear game-development domain goal, scope and boundary;
-2. research into professional game-development practice;
-3. a player-experience and game-thesis model;
-4. a domain-native mechanics, systems, loops and state model;
-5. a prototype, fidelity, cost and commitment strategy;
-6. a level/world/content integration model where relevant;
-7. a playtesting, telemetry, tuning and balancing evidence model;
-8. research into AI skills, game engines, editor agents, MCPs, CLIs, APIs and deterministic tools;
-9. execution-layer decisions and a gap analysis;
-10. a justified core Agent Skills architecture;
-11. decomposed commands where useful;
-12. a first-class Extension Pack architecture;
-13. an initial Extension Pack catalogue strategy;
-14. a domain-native Extension Pack authoring skill or equivalent workflow;
-15. five progressive example levels;
-16. three complementary primary examples per level selected through capability coverage;
-17. deterministic, behavioural, semantic, performance and installation evaluation;
-18. a benchmark and regression architecture;
-19. six canonical project specifications;
-20. a Video-style public README design;
-21. an open-source repository scaffold design;
-22. standalone and selective Agent Skills installation contracts;
-23. local validation and clean external installation smoke tests;
-24. optional Pactwright integration without runtime coupling;
-25. maturity and publication gates;
-26. a cross-domain review with evidence-backed extraction candidates only.
+2. a domain knowledge-coverage map produced through bounded reconnaissance;
+3. a complementary five-book foundational corpus with supplied-book decisions and source-access records;
+4. direct-source reading coverage and per-book extraction records;
+5. a source-to-capability matrix plus overlap / conflict analysis;
+6. a provisional game-development capability model derived from the five books without making the repository book-shaped;
+7. broader professional, empirical and current-practice challenge research;
+8. an evidence-qualified game-development model with supported, qualified, disputed, unresolved and rejected findings distinguished;
+9. a player-experience and game-thesis model;
+10. a domain-native mechanics, systems, loops and state model;
+11. a prototype, fidelity, cost and commitment strategy;
+12. a level/world/content integration model where relevant;
+13. a playtesting, telemetry, tuning and balancing evidence model;
+14. research into AI skills, game engines, editor agents, MCPs, CLIs, APIs and deterministic tools;
+15. execution-layer decisions and a gap analysis;
+16. a justified core Agent Skills architecture;
+17. decomposed commands where useful;
+18. a first-class Extension Pack architecture;
+19. complementary Extension Pack catalogue analysis rather than an unreviewed list of genres or formats;
+20. a five-book foundation for every selected Extension Pack, with reviewed evidence reuse where applicable;
+21. per-pack source-to-behaviour-to-test traceability and separate research / implementation / evaluation / readiness status;
+22. a domain-native Extension Pack authoring skill or equivalent workflow;
+23. five progressive example levels;
+24. three complementary primary examples per level selected through capability coverage;
+25. deterministic, behavioural, semantic, performance and installation evaluation;
+26. a benchmark and regression architecture;
+27. six canonical project specifications;
+28. a Video-style public README design;
+29. an open-source repository scaffold design;
+30. standalone and selective Agent Skills installation contracts;
+31. local validation and clean external installation smoke tests;
+32. optional Pactwright integration without runtime coupling;
+33. maturity and publication gates;
+34. a cross-domain review with evidence-backed extraction candidates only.
 
 The six canonical specifications are:
 
@@ -88,6 +131,9 @@ Specifications 05 and 06 remain separate because the Extension Pack contract and
 Retain the Production Skills family principles:
 
 - **Domain first** - understand professional game development before designing Agent Skills.
+- **Evidence foundation first** - establish a complementary five-book foundation, then challenge and extend it through broader professional research before encoding production capabilities.
+- **Books inform capabilities, not architecture** - do not create book-specific skills, stages or pack categories merely because a source uses that structure.
+- **Source access is not reading** - record what was actually examined; summaries, model memory and a bibliography are not direct-source extraction.
 - **Production intelligence above execution** - game engines, coding agents, editor assistants and deterministic tools execute work; the repository owns the production reasoning that decides what work is required.
 - **Cheapest adequate representation** - resolve uncertainty with the least expensive representation capable of answering the current design question.
 - **Vertical first** - prove a playable end-to-end production path before broadening the architecture.
@@ -97,9 +143,28 @@ Retain the Production Skills family principles:
 - **Standalone first** - `game-development-skills` must remain usable without Pactwright.
 - **Extract later** - share abstractions only after at least two independent Production Skills domains demonstrate substantially the same need.
 
+### 3.1 Stage execution and evidence gates
+
+Treat every stage as a standalone task.
+
+```text
+read canonical inputs
+→ perform the substantive work
+→ persist the detailed research / decision output
+→ verify exit criteria
+→ commit the completed stage
+→ proceed only when dependencies are satisfied
+```
+
+A short summary, candidate list, bibliography or generated specification is not completion evidence for a substantive research stage.
+
+Pending required permission to remove, replace or demote a user-provided book blocks corpus selection. Inadequate direct source access blocks book extraction. Uncertainty in broader research must be recorded and bounded rather than converted into invented certainty.
+
+User-provided books remain members of a corpus unless the user explicitly authorises their removal, replacement or demotion. Selecting books for genuinely empty slots requires no additional approval unless separately requested.
+
 Add game-development-specific principles.
 
-## 3.1 Playability before production scale
+## 3.2 Playability before production scale
 
 A design document is not proof that a game works.
 
@@ -132,7 +197,7 @@ network uncertainty
 
 Do not commission or generate expensive final content to discover that the underlying interaction is not viable.
 
-## 3.2 Player experience must remain connected to mechanics
+## 3.3 Player experience must remain connected to mechanics
 
 Game-development artefacts must preserve the reasoning chain between intended player experience and implemented rules.
 
@@ -149,7 +214,7 @@ intended player experience
 
 Frameworks such as Mechanics-Dynamics-Aesthetics are useful research inputs because they explicitly distinguish implemented mechanics from the dynamics and experience that emerge during play. They are not mandatory repository schemas.
 
-## 3.3 Emergence is evidence, not noise
+## 3.4 Emergence is evidence, not noise
 
 Games contain interacting systems whose combined behaviour may differ from the designer's local intent.
 
@@ -169,7 +234,7 @@ emergent behaviour
 
 A locally correct rule can still create a broken dominant strategy, soft lock, exploit, pacing collapse or inaccessible interaction when composed with other systems.
 
-## 3.4 Human play remains authoritative for experiential claims
+## 3.5 Human play remains authoritative for experiential claims
 
 Automated agents, simulations and scripted playtests can detect:
 
@@ -188,7 +253,7 @@ They must not be treated as conclusive evidence that a game is fun, readable, em
 
 Claims about player experience require appropriately scoped human evidence when the question is experiential.
 
-## 3.5 Accessibility is a core quality dimension
+## 3.6 Accessibility is a core quality dimension
 
 Accessibility must not be hidden inside an optional Extension Pack.
 
@@ -209,7 +274,7 @@ pause / speed options where compatible
 
 Specialist packs may extend an accessibility target, but baseline inclusive practice remains core.
 
-## 3.6 Target-platform behaviour matters
+## 3.7 Target-platform behaviour matters
 
 Editor behaviour is not sufficient evidence for shipping performance.
 
@@ -295,7 +360,11 @@ PROJECT IDEA
     ↓
 1. Define Project Goal and Domain Boundary
     ↓
-2. Research Professional Game-Development Practice
+1A. Map Domain Knowledge Coverage and Select Five-Book Corpus
+    ↓
+1B. Extract and Reconcile the Five-Book Corpus
+    ↓
+2. Challenge and Extend Professional Game-Development Practice
     ↓
 3. Define Player Experience and Game Thesis Model
     ↓
@@ -316,6 +385,11 @@ PROJECT IDEA
 11. Design Core Skills and Commands
     ↓
 12. Design Extension Packs and Pack Authoring
+    ├─ P1 Define Specialisation and Core Baseline
+    ├─ P2 Select Five Complementary Books
+    ├─ P3 Extract and Reconcile Specialised Knowledge
+    ├─ P4 Challenge Claims and Extend Coverage
+    └─ P5 Specify Behaviour and Evaluation
     ↓
 13. Design Progressive Examples
     ↓
@@ -332,6 +406,8 @@ PROJECT IDEA
 19. Implement and Prove One Core Vertical
     ↓
 20. Expand Progressive Coverage and Extension Packs
+    ├─ P6 Implement and Demonstrate
+    └─ P7 Evaluate, Validate Installation and Catalogue
     ↓
 21. Validate Installation and Repository Integrity
     ↓
@@ -386,7 +462,137 @@ A short project charter exists with a defensible boundary, explicit adjacent dis
 
 ---
 
-# 7. Stage 2 - Research Professional Game-Development Practice
+# 6A. Stage 1A - Map Domain Knowledge Coverage and Select Five-Book Corpus
+
+Use the completed Stage 1 charter as the Seed for the canonical domain-research process.
+
+Conduct **bounded reconnaissance** only far enough to identify the important game-development knowledge dimensions and compare candidate books. Do not duplicate Stage 2's full professional-practice research.
+
+Candidate coverage dimensions include:
+
+```text
+player experience / game design
+mechanics / systems / emergence
+controls / feedback / game feel
+levels / encounters / spatial design
+playtesting / balancing / iteration
+production / integration / delivery
+accessibility / inclusive interaction
+```
+
+These are coverage questions, not mandatory one-book-per-slot categories.
+
+Select exactly **five distinct complementary books** as the foundational corpus. Research a broader candidate pool and choose the combination that best covers the Stage 1 boundary rather than simply selecting five famous books.
+
+Prefer durable game-development and design knowledge in the foundational corpus. Rapidly changing engine documentation, provider features and editor automation belong primarily in Stages 2 and 8 rather than being used to pad the five-book requirement.
+
+For each candidate assess:
+
+```text
+relevance to owned game-development responsibilities
+coverage and depth added to the existing corpus
+practical production contribution
+credibility and limitations
+useful contrasting perspective
+currency / durability
+source access
+```
+
+For every selected book record:
+
+```text
+title / author
+edition / publication year
+provided or selected origin
+source location / non-public identifier
+access status
+intended contribution
+material actually examined
+reading limitations
+```
+
+User-provided books remain in the corpus unless the user explicitly approves removal, replacement or demotion. A proposed substitution must record the overlap or coverage problem, expected gain, potential loss and alternative before permission is requested. Silence is not approval.
+
+The five-book corpus does not limit the wider bibliography and does not imply five skills, packs, commands or knowledge categories.
+
+### Research-log output
+
+```text
+knowledge-coverage map
+candidate-book comparison
+selected five-book corpus
+source-access register
+provided / retained / added / substituted decision log
+remaining gaps
+```
+
+### Exit criteria
+
+Exactly five books are selected; required supplied-book decisions are resolved; access needs and remaining knowledge gaps are explicit. Missing direct access may remain recorded at selection time but must be resolved before Stage 1B can complete.
+
+---
+
+# 6B. Stage 1B - Extract and Reconcile the Five-Book Corpus
+
+Meaningfully examine all five selected books for their intended contributions before treating the corpus as evidence.
+
+A bibliography, publisher summary, contents page, model memory or secondary discussion is not direct-source examination.
+
+For each material concept capture:
+
+| Field | Required content |
+|---|---|
+| Source | Book, edition and identifiable chapter, section, page or stable location actually examined |
+| Problem / concept | Game-development problem addressed and independently expressed principle, method or heuristic |
+| Applicability | Context, assumptions, prerequisites and limitations |
+| Production behaviour | Inputs, decisions, workflow implications and outputs affected |
+| Evaluation | Relevant evidence, metrics or possible evaluation criteria |
+| Failure / repair | Failure conditions, misuse risks and smallest-sufficient correction strategies |
+| Relationships | Overlap, support, tension or contradiction with other sources |
+| Disposition | Retain, merge, adapt, qualify, reject or research further |
+
+Map useful findings as:
+
+```text
+source idea
+→ provisional game-development capability
+→ production responsibility
+→ workflow / command implication
+→ evaluation criterion
+→ candidate benchmark case
+```
+
+Do not create book-specific skills or force every selected source to contribute a core rule. Several books repeating a claim do not automatically constitute independent corroboration.
+
+Reconcile overlap without erasing meaningful differences. Contradictory methods may be context-dependent, require a deliberate choice or remain unresolved until Stage 2.
+
+Keep source access separate from publication. Do not commit supplied books, substantial copyrighted text or private source locations. Persist independently expressed synthesis and traceable source locations only.
+
+### Research-log output
+
+```text
+per-book findings
+reading-coverage records
+source-to-capability matrix
+overlap / conflict analysis
+provisional game-development capability model
+unresolved claims and gaps
+```
+
+### Exit criteria
+
+All five books have been meaningfully examined for their intended contributions; material findings are traceable; limitations, conflicts and unresolved questions are explicit. Inadequate source access blocks completion rather than justifying inferred extraction.
+
+---
+
+# 7. Stage 2 - Challenge and Extend Professional Game-Development Practice
+
+Use the Stage 1B provisional capability model to guide, **not limit**, broader research.
+
+This stage has two simultaneous responsibilities:
+
+1. challenge book-derived claims and determine where they are supported, qualified, context-dependent, disputed or rejected;
+2. independently investigate important game-development responsibilities absent from the five-book corpus.
 
 Study strong production practice before researching AI tooling.
 
@@ -416,7 +622,7 @@ live tuning where relevant
 
 Research:
 
-- specialist roles and terminology;
+- specialist roles, authoritative practitioners and terminology;
 - real pre-production and production workflows;
 - paper, spreadsheet, simulation and playable prototypes;
 - greyboxing / whiteboxing / blockouts;
@@ -430,7 +636,9 @@ Research:
 - automated gameplay testing;
 - platform profiling;
 - content production and integration boundaries;
-- common failures and their repair scopes.
+- common failures and their repair scopes;
+- criticism, counterexamples and failure conditions for material book-derived methods;
+- current standards and official guidance where practices can change materially.
 
 Capture domain failure modes such as:
 
@@ -458,11 +666,36 @@ input latency
 accessibility blocker
 ```
 
-Do not import a single studio methodology as the universal workflow.
+Distinguish:
+
+```text
+supported finding
+qualified method
+context-dependent heuristic
+disputed claim
+unresolved question
+rejected idea
+```
+
+Do not import a single studio methodology as the universal workflow, and do not promote an unresolved book claim into an unconditional core rule.
+
+Identify what is deterministic, generative, judgement-heavy or tool-dependent. Separate durable game-development knowledge from engine/provider-specific behaviour; Stage 8 remains the dedicated AI/tool landscape stage.
+
+### Research-log output
+
+```text
+professional-practice map
+supporting and contrary evidence
+gap analysis
+claim dispositions
+failure taxonomy
+evidence-qualified game-development capability model
+unresolved questions
+```
 
 ### Exit criteria
 
-The project has a domain research log showing how professional game-development work reduces uncertainty, commits decisions, integrates systems and evaluates playability.
+The project has an evidence-qualified domain research log showing how professional game-development work reduces uncertainty, commits decisions, integrates systems and evaluates playability. Material book-derived claims have been assessed, important coverage gaps are addressed or bounded, and unresolved claims are not silently promoted to core rules.
 
 ---
 
@@ -1070,9 +1303,18 @@ Extension Packs are a first-class target capability.
 
 The core skills must remain useful without a pack.
 
-Research reusable specialisation dimensions such as:
+Use the canonical `production-skills/docs/bootstrap/extension-pack-process.md` at two levels:
 
-## Gameplay / genre grammar
+1. curate a complementary Game Development Extension Pack catalogue;
+2. run P1–P5 separately for each selected pack before implementation.
+
+Catalogue size is determined by useful complementary coverage, not by the five-book requirement and not by the size of the existing candidate list.
+
+## 17.1 Catalogue curation
+
+Research or generate a broader candidate pool across game-development specialisation dimensions.
+
+### Gameplay / genre grammar candidates
 
 ```text
 precision-platformer
@@ -1088,7 +1330,7 @@ puzzle
 simulation / management
 ```
 
-## Perspective / interaction format
+### Perspective / interaction format candidates
 
 ```text
 2d-side-view
@@ -1100,11 +1342,7 @@ gamepad-first
 local-multiplayer
 ```
 
-Only use these as packs if they materially alter production behaviour rather than acting as labels.
-
-## Production-constraint specialisations
-
-Possible candidates:
+### Production-constraint specialisation candidates
 
 ```text
 low-spec-mobile
@@ -1114,9 +1352,30 @@ high-density-simulation
 networked-cooperative
 ```
 
-These require careful boundary checks against Software Engineering Skills.
+Treat these as **candidate specialisations**, not an initial catalogue.
 
-## Pack boundaries
+Classify every need:
+
+```text
+existing core already covers it
+→ keep core
+
+one-project detail
+→ project instructions
+
+broad game-development responsibility
+→ core-improvement candidate
+
+reusable specialised production behaviour
+→ Extension Pack candidate
+
+insufficient distinction or evidence
+→ defer / reject
+```
+
+Assess the selected catalogue as a set. Avoid near-duplicate packs that merely rename a perspective, genre or platform without changing production behaviour.
+
+## 17.2 Pack boundaries
 
 Do not put these into Game Development packs by default:
 
@@ -1137,24 +1396,104 @@ provider or model choice
 → execution configuration unless it truly changes reusable production grammar
 ```
 
-Every valid pack must define:
+Production-constraint packs such as `networked-cooperative` require explicit checks against Software Engineering ownership.
+
+## 17.3 P1 - Define the specialisation and core baseline
+
+For each selected pack define:
 
 ```text
-scope
-qualification rationale
+intended use / non-use
+reusable production need
+core revision / baseline
+why core + ordinary project instructions is insufficient
+expected specialised behaviour
+relevant core skills
+hard constraints
+soft defaults
+what must remain stable
+adjacent-domain boundaries
+provisional evaluation questions
+```
+
+The baseline must represent the actual production need rather than an intentionally vague core prompt designed to make the pack appear useful.
+
+## 17.4 P2 - Select five complementary foundational books
+
+Each selected pack has exactly five justified foundational books.
+
+The books need not be unique to that pack and there is **no quota of five new books**. Existing domain or other-pack research may be reused only after reviewing the original source location, edition, reading scope, assumptions, limitations and applicability to this specialisation.
+
+Do not automatically inherit the core five-book corpus or copy another pack's bibliography.
+
+Apply the same supplied-book permission, access and publication rules as Stage 1A / 1B.
+
+Record:
+
+```text
+pack-specific knowledge-coverage map
+candidate comparison
+selected five books
+book contribution to this pack
+access / reading status
+reviewed evidence reuse
+substitution approvals where needed
+remaining gaps
+```
+
+## 17.5 P3 - Extract and reconcile specialised knowledge
+
+Map material findings as:
+
+```text
+source finding + examined location
+→ applicability to this game specialisation
+→ change to a core-skill decision
+→ observable playable / artefact effect
+→ evaluation criterion
+→ failure / repair case
+```
+
+A previous citation or another pack profile is not proof of adequate examination. Reused findings must be reviewed for this pack's context.
+
+Keep general Game Development knowledge, specialised pack guidance and project-specific detail distinct.
+
+## 17.6 P4 - Challenge claims and extend coverage
+
+Research supporting and contrary evidence, alternative methods, failure conditions and important requirements absent from the five books.
+
+Additional books, research, standards, practitioner material, official engine/platform documentation and relevant games may supplement this stage. Non-book sources do not count toward the pack's foundational five books.
+
+A technique observed in a successful game is evidence that the technique exists in that work; it is not proof that the technique caused success or is universally desirable.
+
+Record evidential standing separately from disposition.
+
+## 17.7 P5 - Specify behaviour and evaluation
+
+Every selected pack must define:
+
+```text
+scope and qualification rationale
 activation
 precedence
 production rules
 mechanical / systemic effects
 core-skill effects
 what remains core
+hard constraints / soft defaults
+qualified methods / heuristics
 cross-domain boundaries
 specialised evaluation
 negative / incompatibility cases
+smallest-sufficient repair behaviour
 showcase brief
 exact copyable generation prompt
-benchmark coverage
-maturity
+independent reuse brief / fixture
+source-to-behaviour-to-test mapping
+research status
+implementation status
+evaluation status
+readiness status
 ```
 
 Precedence should normally remain:
@@ -1166,25 +1505,32 @@ explicit project instructions
 → core Game Development defaults
 ```
 
-A mature repository should provide `game-extension-pack-creator` or an equivalent workflow:
+Define falsifiable acceptance cases before implementing a pack.
+
+A mature repository should provide `game-extension-pack-creator` or an equivalent workflow. Extend that domain-owned capability to consume completed P1–P5 evidence rather than creating a second generic pack-authoring system or mirroring the P-stage names as mandatory runtime commands.
+
+### Stage 12 research-log outputs
+
+Persist:
 
 ```text
-inspect catalogue
-→ determine whether a new pack is justified
-→ research game grammar
-→ define dimensions and boundaries
-→ define core-skill effects
-→ define pack-aware evaluation
-→ implement
-→ create showcase + exact prompt
-→ create behavioural evals
-→ compare core vs core+pack
-→ validate and catalogue
+catalogue candidate pool
+combined coverage matrix
+selected catalogue rationale
+existing/core/project-instruction alternatives
+per-pack P1 specialisation brief
+per-pack P2 corpus and access record
+per-pack P3 extraction / reconciliation
+per-pack P4 challenge / gap research
+per-pack P5 production profile and source-to-behaviour-to-test mapping
+separate per-pack evidence status
 ```
+
+Additional catalogue ideas may remain explicitly `planned`; do not present them as researched or ready.
 
 ### Exit criteria
 
-The project can distinguish a reusable game-development specialisation from a project brief, engine adapter or adjacent-domain style pack.
+The project can distinguish a reusable game-development specialisation from a project brief, engine adapter or adjacent-domain style pack. Selected packs have evidence-qualified, testable profiles from completed P1–P5 work; unresolved entries remain visibly planned. Actual production proof waits for the implemented core vertical and Stage 20.
 
 ---
 
@@ -1515,12 +1861,43 @@ Require:
 ```text
 activation when requested
 non-activation when absent
-core vs core+pack differential behaviour
+meaningful specialised production behaviour
 explicit instruction precedence
 approved-decision precedence
-pack-aware quality criteria
+pack-aware quality criteria without hiding genuine defects
 negative / incompatibility cases
+targeted refinement without unrelated regeneration
+boundary discipline
 ```
+
+Define pack acceptance before implementation.
+
+For comparative evaluation use the **same substantive game brief, constraints and comparable execution conditions**:
+
+```text
+core only
+vs
+core + pack
+```
+
+The intentional difference is pack activation and its packaged guidance. Do not make the packed run appear superior by giving it a richer task brief.
+
+Where useful, add:
+
+```text
+core + ordinary project instructions
+```
+
+as a third baseline to test whether the pack actually adds reusable depth, consistency or reduced prompting burden.
+
+Every implemented pack must run:
+
+1. its primary showcase with the exact recorded prompt;
+2. a distinct additional reuse brief / fixture;
+3. behavioural and precedence cases;
+4. fair core-vs-pack comparison.
+
+Preserve actual outputs, relevant execution provenance, failures, regressions, inconclusive results and evaluator limitations. A prompt, directory, pack label or single favourable run is not sufficient evidence of reusable improvement.
 
 ## 19.10 Installation smoke tests
 
@@ -1549,7 +1926,7 @@ escaped gameplay defect
 
 ### Exit criteria
 
-The project can detect important regressions cheaply and distinguish correctness, balance, player experience, accessibility and performance evidence.
+The project can detect important regressions cheaply and distinguish correctness, balance, player experience, accessibility and performance evidence. Extension Pack evaluation can distinguish useful specialisation from metadata or prompt advantage and has a clean-installation proof gate.
 
 ---
 
@@ -1649,6 +2026,7 @@ Owns:
 pack definition
 pack dimensions
 qualification
+catalogue-curation method
 activation
 precedence
 core-skill effects
@@ -1656,28 +2034,50 @@ gameplay specialisation
 cross-domain boundaries
 pack packaging
 pack-aware evaluation
+per-pack Seed → Five → Challenge application
+reviewed research-reuse rules
+baseline-comparison contract
+pack readiness gates
 pack-authoring contract
 ```
 
 ## Spec 06 - Extension Pack Catalogue
 
-Owns:
+Owns, for each curated pack:
 
 ```text
-curated initial packs
-production profile
-selection rationale
+identity and intended use / non-use
+selection rationale and complementary catalogue contribution
+core baseline
+specialised behavioural difference
+five-book corpus and each book's contribution
+research-log references
+source-access / reading limitations
+unresolved findings
+hard constraints
+soft defaults
+qualified methods / heuristics
 core-skill effects
+what remains stable
+source-to-behaviour-to-test mapping
 showcase premise
 exact generation prompt
-expected specialised behaviour
-pack-specific evaluation
-implementation / maturity status
+actual showcase outputs when executed
+independent reuse fixture
+pack-specific evaluation evidence
+research status
+implementation status
+evaluation status
+readiness status
+clean-installation evidence
+limitations / compatibility / migration notes
 ```
+
+A planned catalogue entry must not imply completed research, implementation or evaluation. An implemented pack directory must not imply passed comparison or readiness.
 
 ### Exit criteria
 
-Implementation can proceed without inventing the game-development architecture inside code or examples.
+Implementation can proceed without inventing the game-development architecture inside code or examples, and the pack contract / catalogue can distinguish planned specialisations from evidence-qualified and demonstrated packs.
 
 ---
 
@@ -1839,6 +2239,32 @@ Implement the planned capability breadth through the selected progressive exampl
 
 Add Extension Packs only when the core workflow is stable enough to prove differential behaviour.
 
+Use the evidence-qualified P1–P5 profiles from Stage 12 and complete **P6** and **P7** for every implemented pack.
+
+## 25.1 P6 - Implement and demonstrate
+
+Use `game-extension-pack-creator` or the selected domain-owned authoring workflow.
+
+Implement a self-contained pack containing the concise guidance it actually needs at runtime. Research reuse must not create runtime dependencies on the central Production Skills repository, another pack's files, research logs or access to the source books.
+
+For every implemented pack:
+
+```text
+create / refine installable pack
+→ create behavioural fixtures
+→ record exact showcase prompt
+→ run the showcase
+→ preserve actual playable / production outputs
+→ preserve relevant execution provenance
+→ run local validation
+```
+
+A prompt alone is not a demonstration. Unavailable execution remains a blocker rather than being reported as a successful showcase.
+
+## 25.2 P7 - Evaluate, validate installation and catalogue
+
+Run the Stage 14.9 comparison and the independent reuse fixture.
+
 For each implemented pack prove:
 
 ```text
@@ -1846,23 +2272,50 @@ core works without pack
 core + pack changes intended game-development behaviour
 explicit project instruction outranks pack
 approved game decision outranks pack
-pack-aware evaluation recognises intended specialisation
+pack-aware evaluation recognises intended specialisation without hiding defects
 pack authoring can create or revise a valid pack
+specialisation survives a second production brief / fixture
+clean consumer-project installation and use succeeds
 ```
 
-Every catalogue pack must include:
+Record:
 
 ```text
-realistic showcase
-exact copyable prompt
-behavioural evaluation
-core-vs-pack comparison
-maturity status
+core / pack revisions
+exact prompts
+model / tool versions where relevant
+settings / resource constraints
+actual outputs
+behavioural results
+comparative findings
+regressions
+inconclusive cases
+evaluator limitations
+installation evidence
+readiness decision
 ```
+
+Where useful, compare core + ordinary project instructions against the pack to ensure packaging contributes reusable value.
+
+Every ready catalogue pack must include:
+
+```text
+realistic executed showcase
+exact copyable prompt
+actual outputs
+independent reuse fixture
+behavioural evaluation
+fair core-vs-pack comparison
+clean external installation evidence
+limitations
+separate research / implementation / evaluation / readiness status
+```
+
+If useful specialised behaviour is not demonstrated or regressions are unacceptable, refine and retest or retain the entry as unproven / deferred. Do not publish it as ready merely because its files exist.
 
 ### Exit criteria
 
-The repository demonstrates breadth through implemented examples and packs rather than specifications alone.
+The repository demonstrates breadth through implemented examples and evidence-qualified packs rather than specifications alone. Ready pack claims are backed by actual production, comparative evaluation and clean external installation evidence.
 
 ---
 
@@ -1890,6 +2343,8 @@ Test at least:
 4. execution of a representative example without relying on hidden source files.
 
 Where engine software is required, distinguish skill installation from engine prerequisite setup.
+
+Extension Pack research evidence may be shared during development, but installed packs must carry necessary runtime guidance locally and remain independently installable according to the repository contract.
 
 ### Exit criteria
 
@@ -1942,14 +2397,16 @@ public README accurate
 core playable workflow works end to end
 5 levels × 3 primary examples represented
 copyable primary prompts
-Extension Pack contract + catalogue represented
+Extension Pack contract + evidence-qualified catalogue represented
 pack authoring capability represented
-implemented packs have showcases + behavioural evals
+implemented ready packs have executed showcases + behavioural evals + reuse fixtures
 core works without packs
 domain evaluation + regression protection operational
 clean external installation works
 quality claims measured or explicitly marked unmeasured
 ```
+
+Completing the new book or pack research gates does not by itself promote repository maturity.
 
 ---
 
@@ -1985,18 +2442,21 @@ Reusable evidence is captured without coupling `game-development-skills` to spec
 
 # 29. Research Basis for This Bootstrap
 
-This bootstrap uses the current Production Skills family process as its governing source and is informed by the following domain evidence.
+This bootstrap uses the current Production Skills family process as its governing source.
 
 ## Production Skills family
 
 - `production-skills/docs/bootstrap/README.md`
 - `production-skills/docs/bootstrap/new-project-process.md`
 - `production-skills/docs/bootstrap/domain-research-process.md`
+- `production-skills/docs/bootstrap/extension-pack-process.md`
 - `production-skills/docs/bootstrap/shared-abstraction-process.md`
 - current family specifications under `production-skills/docs/specs/`
 - mature Video, Narrative and Music Production Skills repositories
 
-## Game-development references
+## Initial reconnaissance and broader-research inputs
+
+The following sources informed the original bootstrap questions and remain useful inputs for Stage 2, Stage 8 and later specialist research. **They are not the five-book foundational corpus, and their presence here is not evidence that Stage 1A or Stage 1B has been executed.**
 
 ### MDA: A Formal Approach to Game Design and Game Research
 
@@ -2043,7 +2503,7 @@ Useful baseline for treating inclusive controls, perception and cognitive access
 
 - https://gameaccessibilityguidelines.com/full-list/
 
-These sources shape the bootstrap questions and stage boundaries. They do not predetermine the final engine, skill list, artefact model or benchmark implementation.
+These sources seed questions and later challenge, current-practice and tooling research. They do not predetermine the final engine, skill list, artefact model, five-book corpus, Extension Pack catalogue or benchmark implementation.
 
 ---
 
@@ -2056,6 +2516,9 @@ It must encode enough game-development understanding that later sessions can exe
 ```text
 What experience is the game trying to produce?
 What mechanics and systems could produce it?
+Which five complementary books establish the foundational domain corpus?
+What did those books actually contribute, conflict on or fail to cover?
+Which claims survive broader professional and current-practice challenge?
 What is the cheapest playable way to test the current uncertainty?
 What evidence is mechanical, behavioural or experiential?
 What has been accepted and must be preserved?
@@ -2064,8 +2527,10 @@ What is the smallest sufficient correction?
 What work belongs to another Production Skills domain?
 What should the engine or execution tool do rather than this repository?
 How will quality, balance, accessibility and performance be evaluated?
-How can specialisation be added through Extension Packs without weakening the core?
-How can the installed skills prove useful in a clean external game project?
+Which specialised behaviours justify Extension Packs rather than core rules or project instructions?
+What five-book and challenge evidence supports each selected pack?
+Can each implemented pack demonstrate reusable value beyond its showcase under a fair core-vs-pack comparison?
+How can the installed skills and packs prove useful in a clean external game project?
 ```
 
-The bootstrap succeeds when it can drive the repository from research through playable evidence, six canonical specifications, progressive examples, Extension Packs, benchmarks, installation validation and maturity without prematurely building a universal game-development platform.
+The bootstrap succeeds when it can drive the repository from evidence-qualified research through playable evidence, six canonical specifications, progressive examples, Extension Packs, benchmarks, installation validation and maturity without prematurely building a universal game-development platform.
