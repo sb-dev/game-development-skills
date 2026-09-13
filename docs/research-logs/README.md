@@ -53,5 +53,7 @@ The files here are research and design records. Their presence does not mean the
 | [Tactical Turn-based P5](2026-09-13-stage-12-tactical-turn-based-p5.md) | Complete as a profile | Six rules, thirteen falsifiable cases, exact defensive showcase, distinct alternating-initiative reuse and separate evidence states |
 | [Stage 12: Extension Packs and authoring](2026-09-13-stage-12-extension-packs-and-authoring.md) | Complete as research/design | Consolidated two-pack P1–P5 evidence, selection/packaging/authoring contract, distinct proof gates and final conformance |
 | [Stage 13: progressive examples](2026-09-13-stage-13-progressive-examples.md) | Complete as design | Thirty candidates scored; exactly five levels × three examples, all fifteen complete prompts, twenty-dimension coverage and explicit proof gates |
+| [Stage 14: evals and benchmarks](2026-09-13-stage-14-evals-and-benchmarks.md) | Complete as design | Ten layers, twenty case families, eight routing probes, all 25 pack cases and separate clean installation gates |
+| [Stage 14: case designs](2026-09-13-stage-14-case-designs.md) | Complete; supporting design | Reproducible setups, oracles, evidence and smallest-repair boundaries for BC01–BC20 and SR01–SR08 |
 
-Current: **Stage 14 next**. Stages 1, 1A, 1B and 2–13 are complete. Fifteen primary examples are designed, and both selected packs have P1–P5 research. Actual example production, comparisons and clean installation remain unperformed.
+Current: **Stage 15 next**. Stages 1, 1A, 1B and 2–14 are complete. Fifteen primary examples and layered evaluations are designed; both selected packs have P1–P5 research. Actual production, benchmarks, comparisons and clean installation remain unperformed.
