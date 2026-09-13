@@ -28,5 +28,7 @@ The files here are research and design records. Their presence does not mean the
 | [Stage 1B: direct book findings](2026-09-13-stage-01b-book-findings.md) | Complete; supporting evidence | Per-book source locations, applicability, production translations, evaluation, failure/repair and dispositions |
 | [Stage 2: professional practice and capability model](2026-09-13-stage-02-professional-practice-and-capability-model.md) | Complete as research | Professional-practice map, 35 claim dispositions, 21 failure modes, 16 evidence-qualified responsibilities, coverage gaps and completion evidence |
 | [Stage 2: source evidence](2026-09-13-stage-02-source-evidence.md) | Complete; supporting evidence | 24 additional primary sources, examined locations, dates/versions, dependence and reading limits |
+| [Bootstrap execution contract](2026-09-13-bootstrap-execution-contract.md) | Active on `feat/bootstrap-2` | Stage-by-stage work, verification, commit and blocker rules for Stages 3–23 |
+| [Stage 3: player experience and game thesis](2026-09-13-stage-03-player-experience-and-game-thesis.md) | Complete | Compact thesis contract, all 16 candidate-field dispositions, evidence/authority rules, two synthetic document cases and conformance verification |
 
-Next: **Stage 3**, define the player experience and game thesis model using the Stage 2 evidence-qualified domain model. Book extraction and professional-practice challenge research are complete; Stage 3 and implemented capability proofs remain unperformed.
+Next: **Stage 4**, model mechanics, rules, systems, loops and state using the [Game Thesis Contract](../contracts/game-thesis.md) and accepted research. Stages 1, 1A, 1B, 2 and 3 are complete; implemented capability proofs remain unperformed.
