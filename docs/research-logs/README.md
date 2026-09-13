@@ -41,5 +41,6 @@ The files here are research and design records. Their presence does not mean the
 | [Stage 10: gap analysis and over-engineering review](2026-09-13-stage-10-gap-analysis-and-over-engineering-review.md) | Complete | Sixteen classified focus areas, workflow comparison, native-intelligence justification and all 13 deferred architecture flags |
 | [Stage 11: core skills and commands](2026-09-13-stage-11-core-skills-and-commands.md) | Complete as design | Three hypotheses compared; three installable responsibilities, 14 bounded operations, all 23 candidate dispositions and benchmark-question traceability |
 | [Stage 12: catalogue curation](2026-09-13-stage-12-catalogue-curation.md) | Curation complete; Stage 12 in progress | Thirty-two candidates compared; precision-platformer and tactical-turn-based selected for separate P1–P5 research |
+| [Precision Platformer P1](2026-09-13-stage-12-precision-platformer-p1.md) | Complete | Bounded specialisation, honest core baseline, expected delta, constraints and evaluation questions |
 
-Current: **Stage 12**, per-pack P1–P5 research and pack-authoring design. Catalogue curation is complete; both selected packs begin at P1. Stages 1, 1A, 1B and 2–11 are complete. Implemented capability proofs and clean installation remain unperformed.
+Current: **Stage 12**. Precision Platformer P1 is complete; P2 is next. Tactical Turn-based remains planned at P1. Stages 1, 1A, 1B and 2–11 are complete. Implemented capability proofs and clean installation remain unperformed.
