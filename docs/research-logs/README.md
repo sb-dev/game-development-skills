@@ -50,5 +50,6 @@ The files here are research and design records. Their presence does not mean the
 | [Tactical Turn-based P2](2026-09-13-stage-12-tactical-turn-based-p2.md) | Complete | Tactical coverage map, nine-book comparison, five selected works, pinned author source and reuse/access decisions |
 | [Tactical Turn-based P3](2026-09-13-stage-12-tactical-turn-based-p3.md) | Complete | Five examined contributions, twelve tactical decision/effect/test/repair mappings and nine reconciled tensions |
 | [Tactical Turn-based P4](2026-09-13-stage-12-tactical-turn-based-p4.md) | Complete | Eight source groups, eleven dispositions, contrasting information policies and runtime/navigation coverage |
+| [Tactical Turn-based P5](2026-09-13-stage-12-tactical-turn-based-p5.md) | Complete as a profile | Six rules, thirteen falsifiable cases, exact defensive showcase, distinct alternating-initiative reuse and separate evidence states |
 
-Current: **Stage 12**. Precision Platformer P1–P5 and Tactical Turn-based P1–P4 research are complete; Tactical Turn-based P5 is next. Stages 1, 1A, 1B and 2–11 are complete. Implemented capability proofs and clean installation remain unperformed.
+Current: **Stage 12**. Both selected packs have complete P1–P5 research. The domain authoring contract and final Stage 12 audit are next. Stages 1, 1A, 1B and 2–11 are complete. Implemented capability proofs and clean installation remain unperformed.
