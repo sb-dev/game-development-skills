@@ -38,5 +38,6 @@ The files here are research and design records. Their presence does not mean the
 | [Stage 8: candidate register](2026-09-13-stage-08-candidate-register.md) | Complete; supporting evidence | 22 candidates × 14 fields, installation/access/licence limits and conditional USE/ADAPT/REFERENCE/REJECT dispositions |
 | [Stage 8: source evidence](2026-09-13-stage-08-source-evidence.md) | Complete; supporting evidence | Examined primary locations, versions/dates, 15 repository snapshots, deprecation findings and reading limits |
 | [Stage 9: execution layer and engine integration](2026-09-13-stage-09-execution-layer-and-engine-integration.md) | Complete as architecture | Eleven execution boundaries, adapter placement, minimum inspection, detection, engine-specific proof and clean installation; browser first-proof path |
+| [Stage 10: gap analysis and over-engineering review](2026-09-13-stage-10-gap-analysis-and-over-engineering-review.md) | Complete | Sixteen classified focus areas, workflow comparison, native-intelligence justification and all 13 deferred architecture flags |
 
-Next: **Stage 10**, gap analysis and over-engineering review. Stages 1, 1A, 1B and 2–9 are complete. The first proof uses a bounded browser runtime; implemented capability proofs and clean installation remain unperformed.
+Next: **Stage 11**, design core skills and commands. Stages 1, 1A, 1B and 2–10 are complete. The first proof uses a bounded browser runtime; implemented capability proofs and clean installation remain unperformed.
