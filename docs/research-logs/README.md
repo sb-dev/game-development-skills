@@ -57,5 +57,6 @@ The files here are research and design records. Their presence does not mean the
 | [Stage 14: case designs](2026-09-13-stage-14-case-designs.md) | Complete; supporting design | Reproducible setups, oracles, evidence and smallest-repair boundaries for BC01–BC20 and SR01–SR08 |
 | [Stage 15: canonical specifications](2026-09-13-stage-15-canonical-specifications.md) | Complete as design | Six complete specifications; all operation, benchmark, curriculum and pack contracts preserved with separate proof states |
 | [Stage 16: public README](2026-09-13-stage-16-public-readme.md) | Complete as design | Public install/play route, exact Level 1 prompt, five trios and evidence-qualified capabilities; actual install/run proof remains for execution stages |
+| [Stage 17: cross-project review](2026-09-13-stage-17-cross-project-review.md) | Complete | Four pinned repositories reviewed; ten complete common-need records and eight game-local boundaries; no family mutation |
 
-Current: **Stage 17 next**. Stages 1, 1A, 1B and 2–16 design work is complete. Six canonical specifications and the public README govern implementation. Actual production, benchmarks, comparisons and clean installation remain unperformed.
+Current: **Stage 18 next**. Stages 1, 1A, 1B and 2–17 research/design work is complete. Scaffolding and actual production, benchmarks, comparisons and clean installation are next.
