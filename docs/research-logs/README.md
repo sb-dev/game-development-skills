@@ -47,5 +47,6 @@ The files here are research and design records. Their presence does not mean the
 | [Precision Platformer P4](2026-09-13-stage-12-precision-platformer-p4.md) | Complete | Eight primary-source groups, eleven claim dispositions, contrary methods and bounded input/timing/access gaps |
 | [Precision Platformer P5](2026-09-13-stage-12-precision-platformer-p5.md) | Complete as a profile | Six operational rules, twelve falsifiable cases, exact showcase prompt, independent reuse and separate evidence states |
 | [Tactical Turn-based P1](2026-09-13-stage-12-tactical-turn-based-p1.md) | Complete | Bounded tactical decision/resolution grammar, honest core baseline, constraints and evaluation questions |
+| [Tactical Turn-based P2](2026-09-13-stage-12-tactical-turn-based-p2.md) | Complete | Tactical coverage map, nine-book comparison, five selected works, pinned author source and reuse/access decisions |
 
-Current: **Stage 12**. Precision Platformer P1–P5 research and Tactical Turn-based P1 are complete; Tactical Turn-based P2 is next. Stages 1, 1A, 1B and 2–11 are complete. Implemented capability proofs and clean installation remain unperformed.
+Current: **Stage 12**. Precision Platformer P1–P5 and Tactical Turn-based P1–P2 research are complete; Tactical Turn-based P3 is next. Stages 1, 1A, 1B and 2–11 are complete. Implemented capability proofs and clean installation remain unperformed.
