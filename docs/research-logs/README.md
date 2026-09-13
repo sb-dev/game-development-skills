@@ -23,6 +23,8 @@ The files here are research and design records. Their presence does not mean the
 |---|---|---|
 | [Bootstrap process](2026-09-07-game-development-skills-new-project-bootstrap-process.md) | Specification v1.1 | Governing stages and exit criteria |
 | [Stage 1: project charter and domain boundary](2026-09-12-stage-01-project-charter-and-domain-boundary.md) | Complete | Owned outcomes, users, coverage, handoffs, quality, approvals and installed playable success criteria |
-| [Stage 1A: knowledge coverage and five-book corpus](2026-09-12-stage-01a-knowledge-coverage-and-five-book-corpus.md) | Complete; extraction access incomplete | Coverage map, ten-book comparison, five selected books, access register, decisions and remaining gaps |
+| [Stage 1A: knowledge coverage and five-book corpus](2026-09-12-stage-01a-knowledge-coverage-and-five-book-corpus.md) | Complete; historical corpus revision 1 | Coverage map, ten-book comparison, original selection and access state; active corpus/access superseded by Stage 1B |
+| [Stage 1B: five-book extraction and reconciliation](2026-09-13-stage-01b-five-book-extraction-and-reconciliation.md) | Complete; corpus revision 2 | Five supplied editions, reading coverage, 35 traceable findings, provisional capabilities, candidate benchmarks, conflicts and research gaps |
+| [Stage 1B: direct book findings](2026-09-13-stage-01b-book-findings.md) | Complete; supporting evidence | Per-book source locations, applicability, production translations, evaluation, failure/repair and dispositions |
 
-Next: **Stage 1B**, direct extraction and reconciliation of the five-book corpus. Missing source access must be resolved before that stage can complete. **Stage 2** then challenges and extends the extracted model. Neither extraction nor challenge research has been completed on this branch.
+Next: **Stage 2**, challenge and extend the Stage 1B provisional model through broader professional-practice research. Direct extraction is complete; independent challenge research and implemented capability proofs remain unperformed.
