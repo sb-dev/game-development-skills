@@ -1,0 +1,45 @@
+{
+  "scope": "synthetic contract predicates only",
+  "status": "PASS",
+  "patterns": 4,
+  "evaluations": 12,
+  "runtime_or_perceptual_validation": false,
+  "results": [
+    {
+      "pattern": "narrative",
+      "baseline": "ACCEPT",
+      "defect": "REJECT",
+      "diagnostic": "unknown_event_binding",
+      "repair": "ACCEPT",
+      "repair_owner": "gameplay integration",
+      "requirements_preserved": true
+    },
+    {
+      "pattern": "environment",
+      "baseline": "ACCEPT",
+      "defect": "REJECT",
+      "diagnostic": "insufficient_clearance",
+      "repair": "ACCEPT",
+      "repair_owner": "gameplay/import integration",
+      "requirements_preserved": true
+    },
+    {
+      "pattern": "animation",
+      "baseline": "ACCEPT",
+      "defect": "REJECT",
+      "diagnostic": "event_outside_window",
+      "repair": "ACCEPT",
+      "repair_owner": "animation producer",
+      "requirements_preserved": true
+    },
+    {
+      "pattern": "music_audio",
+      "baseline": "ACCEPT",
+      "defect": "REJECT",
+      "diagnostic": "unknown_mix_state",
+      "repair": "ACCEPT",
+      "repair_owner": "gameplay/audio integration",
+      "requirements_preserved": true
+    }
+  ]
+}
