@@ -42,5 +42,6 @@ The files here are research and design records. Their presence does not mean the
 | [Stage 11: core skills and commands](2026-09-13-stage-11-core-skills-and-commands.md) | Complete as design | Three hypotheses compared; three installable responsibilities, 14 bounded operations, all 23 candidate dispositions and benchmark-question traceability |
 | [Stage 12: catalogue curation](2026-09-13-stage-12-catalogue-curation.md) | Curation complete; Stage 12 in progress | Thirty-two candidates compared; precision-platformer and tactical-turn-based selected for separate P1–P5 research |
 | [Precision Platformer P1](2026-09-13-stage-12-precision-platformer-p1.md) | Complete | Bounded specialisation, honest core baseline, expected delta, constraints and evaluation questions |
+| [Precision Platformer P2](2026-09-13-stage-12-precision-platformer-p2.md) | Complete | Coverage map, eight-book comparison, five selected supplied works, access/reuse limits and permission decisions |
 
-Current: **Stage 12**. Precision Platformer P1 is complete; P2 is next. Tactical Turn-based remains planned at P1. Stages 1, 1A, 1B and 2–11 are complete. Implemented capability proofs and clean installation remain unperformed.
+Current: **Stage 12**. Precision Platformer P1–P2 are complete; P3 is next. Tactical Turn-based remains planned at P1. Stages 1, 1A, 1B and 2–11 are complete. Implemented capability proofs and clean installation remain unperformed.
