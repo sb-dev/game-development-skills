@@ -1,75 +1,84 @@
 # Bootstrap Research and Execution Tooling
 
 **Status:** Family-candidate prototype  
-**Date:** 17 September 2026  
+**Revised:** 17 September 2026  
 **Branch:** `feat/bootstrap-3`
 
-## Purpose
+## Operator model
 
-This branch adds the shared bootstrap operator model used across Production Skills projects without duplicating game-development methodology outside the governing bootstrap.
-
-## Operator surface
-
-The normal command is:
+The normal entry point is:
 
 ```text
 /bootstrap
 ```
 
-It reconstructs progress from repository state, resumes at the next incomplete stage, and continues through the remaining bootstrap until completion or a genuine user decision is required.
+The user should not repeat stage numbers, research instructions, or supplied-book paths on each run.
 
-The user should not need to restate stage numbers, ranges, or the execution procedure on each run.
+## Local supplied-book convention
 
-## Internal support skills
-
-```text
-.claude/skills/
-├── bootstrap/
-├── bootstrap-stage-execution/
-├── bootstrap-research/
-└── direct-source-extraction/
-```
-
-Only `/bootstrap` is the normal operator entry point. The other three skills are internal support capabilities.
-
-### `bootstrap-stage-execution`
-
-Owns the reusable stage loop: read requirements, execute, persist, verify, repair, commit, push, and return control to `/bootstrap`.
-
-### `bootstrap-research`
-
-Owns reusable research mechanics. Claude Code `WebSearch`/`WebFetch` remain the default path. Firecrawl is an escalation layer for richer search/extraction, site mapping/crawling, dynamic interaction, document parsing, and developer/tooling source retrieval.
-
-Game-specific evidence rules remain in the governing bootstrap, including the distinction between mechanical/automated evidence and experiential human-play evidence.
-
-### `direct-source-extraction`
-
-Owns direct reading, source coverage, traceable extraction, reconciliation, and copyright-safe persistence for the Seed → Five → Challenge stages and Extension Pack research.
-
-## Firecrawl policy
-
-Use native Claude web tools first. Do not run `firecrawl setup defaults` and do not add a generic deep-research workflow that competes with the project bootstrap.
-
-Large Firecrawl retrieval artefacts belong under `.firecrawl/`, which is ignored by Git.
-
-## Source of truth
+Put user-supplied book PDFs under:
 
 ```text
-HOW execution/research works
-→ shared skills
-
-WHAT game-development evidence counts
-→ governing bootstrap specification
-
-WHAT each stage must produce
-→ governing bootstrap specification
-
-WHAT branch/run is active
-→ bootstrap execution contract under docs/research-logs/
+books/
 ```
 
-No `.claude/bootstrap/` configuration layer is used.
+Subdirectories are allowed; `/bootstrap` scans `books/**/*.pdf`.
 
-## Branch rule
+Lifecycle:
 
-This feature branch is based directly on `main`. It must not inherit accepted stage state from earlier feature branches. `/bootstrap` reconstructs progress from `feat/bootstrap-3` only.
+```text
+local PDF discovered
+→ treat as user-supplied source
+→ capture bibliographic/access metadata
+→ apply corpus-selection and permission rules from the bootstrap
+→ directly examine selected books when the extraction stage arrives
+→ persist reading coverage and findings
+```
+
+The actual PDFs remain local working material and are gitignored. Durable logs record only repository-relative identifiers such as `books/<file>.pdf`, bibliographic metadata, access state, selection decisions, reading coverage and findings. Never persist absolute machine paths.
+
+Do not upload supplied PDFs to Firecrawl or another external service without explicit user approval. Native/local reading is the default.
+
+If more PDFs are supplied than the foundational corpus allows, follow the governing bootstrap's approval rules before excluding, replacing or demoting any supplied source. If a new PDF appears after corpus selection is already accepted, do not silently reopen the corpus; treat it as supplementary unless the process or user explicitly reopens selection.
+
+## Skills
+
+```text
+/bootstrap
+    ↓
+bootstrap-stage-execution
+    ├── bootstrap-research
+    └── direct-source-extraction
+```
+
+`bootstrap-research` uses Claude Code `WebSearch` / `WebFetch` first and escalates to Firecrawl only for a concrete retrieval problem. `direct-source-extraction` owns local source inventory, meaningful reading, source-location traceability and reconciliation.
+
+## Game-development research boundary
+
+Use professional practice, primary design literature, official engine/platform documentation and actual game evidence as appropriate. Automated tests, simulations and telemetry can establish mechanical or behavioural evidence but must not silently substitute for human play evidence when the claim is experiential.
+
+## Retrieval boundary
+
+```text
+WebSearch before Firecrawl search
+WebFetch before Firecrawl scrape
+local Read before external document parsing
+```
+
+Large Firecrawl outputs belong under `.firecrawl/`, which is gitignored. `books/` is also gitignored.
+
+## Separation of responsibility
+
+```text
+HOW bootstrap research/execution works
+→ reusable Claude skills
+
+WHAT counts as game-development evidence and what each stage must produce
+→ governing game-development bootstrap specification
+
+WHAT this branch may execute
+→ bootstrap execution contract
+
+WHAT source files are locally available
+→ books/**/*.pdf at runtime
+```
